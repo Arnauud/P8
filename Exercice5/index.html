@@ -9,15 +9,18 @@
 
 <!-- Formulaire sans étiquette pour les champs -->
 <form>
-    <input id="name" type="text" placeholder="Entrez votre nom">
-    <input id="email" type="email" placeholder="Entrez votre adresse e-mail">
+    <input id="name" type="text" placeholder="Entrez votre nom" aria-label="Nom">
+    <label for="name">Your Name</label>
+    <input id="email" type="email" placeholder="Entrez votre adresse e-mail" aria-label="Adresse email">
+    <label for="email">Your Email</label>
     <button type="submit">Envoyer</button>
 </form>
 
 <!-- Image sans attribut alt -->
-<img src="assets/image.png" height=250>
+<img src="assets/image.png" height=250 alt="isImage"> 
+<!-- pultot mettre un alt ici ?  -->
 
 <!-- Lien sans texte descriptif -->
-<a href="#">Cliquez ici</a>
+<a href="#" aria-label="Cliquez ici" title="Click Here">Cliquez ici</a>
 </body>
 </html>
